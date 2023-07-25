@@ -44,10 +44,7 @@ class projects(models.Model):
     slug = models.SlugField(null=True)
     description = models.TextField(blank=True, null=True)
     creator = models.TextField()
-    date_added = models.DateTimeField(auto_now_add=True)
-
-    class Meta:
-        ordering = ('-date_added',)
+    time_added = models.TimeField(auto_now_add=True)
 
     def __str__(self):
         return self.title
@@ -65,28 +62,15 @@ class messages(models.Model):
     def __str__(self):
         return self.name
 
-
 class Mentor(models.Model):
     name = models.CharField(max_length=256)
     email = models.EmailField()
-    image = models.ImageField(blank=True, null=True,)
-    description = models.TextField(blank=True, null=True)
+    image = models.ImageField(blank=True, null = True,)
+    description = models.TextField(blank=True, null = True)
     created = models.DateTimeField(auto_now_add=True)
 
     class Meta:
-        ordering = ('-created',)
-
-    def __str__(self):
-        return self.name
-
-
-class Feadback(models.Model):
-    name = models.CharField(max_length=256)
-    massages = models.TextField()
-    time_added = models.TimeField(auto_now_add=True)
-
-    class Meta:
-        ordering = ['-time_added']
-
+        ordering = ('-created')
+        
     def __str__(self):
         return self.name
