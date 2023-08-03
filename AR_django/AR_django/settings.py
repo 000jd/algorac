@@ -67,11 +67,12 @@ JAZZMIN_SETTINGS = {
     "site_brand": "ALGORAC",
 }
 
-#CORS_ALLOWED_ORIGINS = [
+CORS_ALLOWED_ORIGINS = [
     # front-end address
-    #"http://localhost:8080",
-    #"http://192.168.215.133:8080"
-#]
+    "http://localhost:8080",
+    "http://192.168.215.133:8080"
+
+]
 
 CORS_ALLOWED_ORIGINS = ['*']
 

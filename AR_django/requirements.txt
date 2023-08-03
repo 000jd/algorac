@@ -10,3 +10,4 @@ social-auth-core==4.4.1
 django-jazzmin==2.6.0
 gunicorn==21.2.0
 whitenoise==6.5.0
+pillow==10.0.0
