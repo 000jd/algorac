@@ -70,8 +70,9 @@ JAZZMIN_SETTINGS = {
 CORS_ALLOWED_ORIGINS = [
     # front-end address
     "http://localhost:8080",
-    "http://192.168.215.133:8080"
-
+    "http://192.168.215.133:8080",
+    "https://algorac.netlify.app/",
+    "https://algorac.netlify.app"
 ]
 
 CORS_ALLOWED_ORIGINS = ['*']
