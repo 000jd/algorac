@@ -65,12 +65,12 @@ class messages(models.Model):
 class Mentor(models.Model):
     name = models.CharField(max_length=256)
     email = models.EmailField()
-    image = models.ImageField(blank=True, null = True,)
-    description = models.TextField(blank=True, null = True)
+    image = models.ImageField(blank=True, null=True)
+    description = models.TextField(blank=True, null=True)
     created = models.DateTimeField(auto_now_add=True)
 
     class Meta:
-        ordering = ('-created')
-        
+        ordering = ('-created',)  # Note the comma after '-created'
+
     def __str__(self):
         return self.name
