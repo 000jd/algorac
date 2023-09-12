@@ -8,7 +8,7 @@ from django.contrib.auth.models import User
 class GallerySerializer(serializers.ModelSerializer):
     class Meta:
         model = Gallery
-        fields = '__all__'
+        fields = ('topic', 'slug', 'image', 'date_added', 'get_image') 
 
 
 class NoticeSerializer(serializers.ModelSerializer):
@@ -26,7 +26,7 @@ class NoticeSerializer(serializers.ModelSerializer):
 class ProjectSerializer(serializers.ModelSerializer):
     class Meta:
         model = projects
-        fields = '__all__'
+        fields = ('topic', 'slug', 'image', 'date_added', 'get_projects_image') 
 
 
 class MessagesSerializer(serializers.ModelSerializer):

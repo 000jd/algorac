@@ -21,7 +21,7 @@ class Gallery(models.Model):
 
     def get_image(self):
         if self.image:
-            return 'http://127.0.0.1:8000'+self.image.url
+            return 'https://algoracbackend.onrender.com'+self.image.url
         return ''
 
 
@@ -49,6 +49,10 @@ class projects(models.Model):
     def __str__(self):
         return self.title
 
+    def get_projects_image(self):
+        if self.image:
+            return 'https://algoracbackend.onrender.com'+self.image.url
+        return ''
 
 class messages(models.Model):
     name = models.CharField(max_length=100)
