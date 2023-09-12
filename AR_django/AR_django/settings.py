@@ -29,7 +29,7 @@ DEBUG = True
 # DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1', '127.0.0.1:8000',
-                 'algoracbackend.onrender.com', 'www.algoracbackend.onrender.com']
+                'algoracbackend.onrender.com', 'www.algoracbackend.onrender.com']
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework_simplejwt.authentication.JWTAuthentication',
